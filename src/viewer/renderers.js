@@ -4,7 +4,7 @@ const renderers = {
     return <EuiText>{children}</EuiText>;
   },
   paragraph: ({ children }) => {
-    return <EuiText>{children}</EuiText>;
+    return <EuiText style={{ marginBottom: "0.5rem" }}>{children}</EuiText>;
   },
   strong: ({ children }) => {
     return (
@@ -28,7 +28,11 @@ const renderers = {
     );
   },
   code: ({ language, value }) => {
-    return <EuiCodeBlock language={language} isCopyable paddingSize="m" children={value} />;
+    return (
+      <div style={{ marginLeft: "2rem", marginRight: "2rem" }}>
+        <EuiCodeBlock language={language} isCopyable paddingSize="m" children={value} />
+      </div>
+    );
   },
   thematicBreak: () => {
     return <EuiHorizontalRule size="half" />;

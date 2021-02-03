@@ -1,7 +1,7 @@
-- [] Update README
-- [] Add error checking on uploading YAML vs MD, check file exstension
-- [] Memory?
-- [] Create a more in depth sample
-- [] Fix the serviceWorker reg
-- [] Implement loading bar / progress
-- [] Implement code splitting
+- [ ] Update README
+- [ ] Add error checking on uploading YAML vs MD, check file exstension
+- [ ] Memory?
+- [ ] Create a more in depth sample
+- [x] Fix the serviceWorker reg
+- [ ] Implement loading bar / progress
+- [ ] Implement code splitting
