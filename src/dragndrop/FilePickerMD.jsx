@@ -1,10 +1,14 @@
-import { useContext } from "react";
-import { EuiFilePicker, EuiText } from "@elastic/eui";
+import { useContext, useState } from "react";
+import {
+  EuiFilePicker,
+  // EuiText
+} from "@elastic/eui";
 import { ToastContainer, toast } from "react-toastify";
 import DarkTheme from "@elastic/eui/dist/eui_theme_dark.json";
 import MetaContext from "../MetaContext";
 
 const FilePickerMD = () => {
+  const [valid, setValid] = useState(true);
   const { meta, setMeta } = useContext(MetaContext);
   const wrongFile = () => toast("Only .md or .markdown files are accepted");
 
@@ -18,11 +22,14 @@ const FilePickerMD = () => {
           .match(/md|markdown/g) === null
       ) {
         wrongFile();
+        setValid(false);
         setMeta({ ...meta, markdown: "undefined" });
       } else {
+        setValid(true);
         setMeta({ ...meta, markdown: md });
       }
     } else {
+      setValid(false);
       setMeta({ ...meta, markdown: "undefined" });
     }
   };
@@ -42,8 +49,9 @@ const FilePickerMD = () => {
           onChange(files);
         }}
         display="large"
+        isInvalid={!valid}
       />
-      <EuiText>{meta.markdown !== "undefined" && JSON.stringify(meta.markdown, null, 2)}</EuiText>
+      {/* <EuiText>{meta.markdown !== "undefined" && JSON.stringify(meta.markdown, null, 2)}</EuiText> */}
       <ToastContainer closeOnClick autoClose={5000} toastStyle={toastStyles} closeButton={false} />
     </>
   );
