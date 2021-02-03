@@ -23,6 +23,7 @@ const App = () => {
     markdown: "undefined",
   });
   const value = { meta, setMeta };
+  // console.log(meta);
   return (
     <MetaContext.Provider value={value}>
       <Container maxWidth="md" style={{ paddingBottom: "3.5rem" }}>
