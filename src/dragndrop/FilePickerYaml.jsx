@@ -1,14 +1,38 @@
-import { useContext } from "react";
-import { EuiFilePicker, EuiText } from "@elastic/eui";
+import { useContext, useState } from "react";
+import {
+  EuiFilePicker,
+  // EuiText
+} from "@elastic/eui";
+import { ToastContainer, toast } from "react-toastify";
+import DarkTheme from "@elastic/eui/dist/eui_theme_dark.json";
 import jsyaml from "js-yaml";
 import MetaContext from "../MetaContext";
 
 const FilePickerYaml = () => {
+  const [valid, setValid] = useState(true);
   const { meta, setMeta } = useContext(MetaContext);
+  const wrongFile = () => toast("Only .yml or .yaml files are accepted");
 
   const onChange = async (files) => {
-    const json = await readFileYaml(files[0]);
-    setMeta({ ...meta, json: json });
+    if (files.length > 0) {
+      const json = await readFileYaml(files[0]);
+      if (
+        files[0].name
+          .split(".")
+          .slice(-1)[0]
+          .match(/yaml|yml/g) === null
+      ) {
+        wrongFile();
+        setValid(false);
+        setMeta({ ...meta, json: "undefined" });
+      } else {
+        setValid(true);
+        setMeta({ ...meta, json: json });
+      }
+    } else {
+      setValid(false);
+      setMeta({ ...meta, json: "undefined" });
+    }
   };
 
   const readFileYaml = async (blob) => {
@@ -27,10 +51,16 @@ const FilePickerYaml = () => {
           onChange(files);
         }}
         display="large"
+        isInvalid={!valid}
       />
-      <EuiText>{meta.json !== "undefined" && JSON.stringify(meta.json, null, 2)}</EuiText>
+      {/* <EuiText>{meta.json !== "undefined" && JSON.stringify(meta.json, null, 2)}</EuiText> */}
+      <ToastContainer closeOnClick autoClose={5000} toastStyle={toastStyles} closeButton={false} />
     </>
   );
 };
 
 export default FilePickerYaml;
+
+const toastStyles = {
+  background: DarkTheme.euiCodeBlockBackgroundColor,
+};
