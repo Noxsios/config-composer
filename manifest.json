@@ -21,6 +21,5 @@
   "start_url": ".",
   "display": "minimal-ui",
   "theme_color": "#000000",
-  "background_color": "#1A1B20",
-  "scope": "/"
+  "background_color": "#1A1B20"
 }

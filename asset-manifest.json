@@ -818,6 +818,8 @@
     "static/js/407.2e3529cb.chunk.js": "/config-composer/static/js/407.2e3529cb.chunk.js",
     "static/js/407.2e3529cb.chunk.js.map": "/config-composer/static/js/407.2e3529cb.chunk.js.map",
     "index.html": "/config-composer/index.html",
+    "service-worker.js": "/config-composer/service-worker.js",
+    "service-worker.js.map": "/config-composer/service-worker.js.map",
     "static/css/407.61d8a298.chunk.css.map": "/config-composer/static/css/407.61d8a298.chunk.css.map",
     "static/js/407.2e3529cb.chunk.js.LICENSE.txt": "/config-composer/static/js/407.2e3529cb.chunk.js.LICENSE.txt"
   },
