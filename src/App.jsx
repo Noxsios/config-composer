@@ -2,6 +2,7 @@ import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { EuiPanel, EuiTitle, EuiSpacer } from "@elastic/eui";
 import { Container } from "@material-ui/core";
+import Footer from "./Footer";
 import gfm from "remark-gfm";
 import { renderers } from "./markdown/renderers";
 import CoverForm from "./dragndrop/CoverForm";
@@ -27,6 +28,7 @@ const App = () => {
             <ReactMarkdown children={Mustache.render(meta.markdown, meta.json)} plugins={[gfm]} renderers={renderers} />
           </EuiPanel>
         )}
+        <Footer />
       </Container>
     </MetaContext.Provider>
   );

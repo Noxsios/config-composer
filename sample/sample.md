@@ -3,7 +3,7 @@
 
 Short explanation / notes
 
-```
+```js
 name BACKUP_LOCAL_MGMT
 exit
 !
