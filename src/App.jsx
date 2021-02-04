@@ -4,6 +4,7 @@ import { Container, Grid, LinearProgress } from "@material-ui/core";
 import MetaContext from "./MetaContext";
 import DarkTheme from "@elastic/eui/dist/eui_theme_dark.json";
 import Footer from "./Footer";
+const Tutorial = lazy(() => import("./Tutorial"));
 const RenderedMD = lazy(() => import("./viewer/RenderedMD"));
 const CoverForm = lazy(() => import("./dragndrop/CoverForm"));
 
@@ -30,6 +31,10 @@ const App = () => {
         <EuiTitle size="l">
           <h1 style={{ textAlign: "center", padding: "1rem" }}>Config Composer</h1>
         </EuiTitle>
+        <Suspense fallback={<div />}>
+          <Tutorial />
+        </Suspense>
+        <EuiSpacer />
         <Suspense fallback={<Loading />}>
           <CoverForm />
           <EuiSpacer />
