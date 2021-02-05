@@ -4,6 +4,7 @@ import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import "@elastic/eui/dist/eui_theme_dark.css";
 import "react-toastify/dist/ReactToastify.css";
+import "./printStyle.css";
 
 ReactDOM.render(
   <React.StrictMode>

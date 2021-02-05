@@ -33,4 +33,8 @@ Follow the [CRA](https://create-react-app.dev/docs/getting-started/#scripts) doc
 - [ ] Persistency?
 - [ ] Create a more in depth sample
 - [ ] Implement more code splitting / better bundling
+- [ ] Flip back between raw MB and rendered?
+- [ ] Edit YAML / metadata in browser? + resave
+- [ ] Pick up where you left off choice modal
+  - [ ] store in indexeddb -future proofs against saving more files
 
