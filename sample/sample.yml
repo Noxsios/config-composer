@@ -1,3 +1,9 @@
 FIRSTIP: 192.168.0.1
 SECONDIP: 192.168.0.2
-SomeText: why hello there
+sampleHidden: false
+sampleLoop:
+  - number: 1
+  - number: 2
+  - number: 3
+  - number: 4
+  - number: 5

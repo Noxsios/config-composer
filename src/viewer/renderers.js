@@ -1,4 +1,14 @@
-import { EuiCodeBlock, EuiCode, EuiText, EuiTextColor, EuiHorizontalRule } from "@elastic/eui";
+import {
+  EuiCodeBlock,
+  EuiCode,
+  EuiText,
+  EuiTextColor,
+  EuiHorizontalRule,
+  EuiTableHeader,
+  EuiTableBody,
+  EuiTableRow,
+  EuiTableRowCell,
+} from "@elastic/eui";
 const renderers = {
   root: ({ children }) => {
     return <EuiText>{children}</EuiText>;
@@ -39,6 +49,29 @@ const renderers = {
   },
   inlineCode: ({ language = "js", value }) => {
     return <EuiCode language={language} children={value} style={{ color: "#FFCE7A" }} />;
+  },
+  table: ({ children }) => {
+    return (
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ display: "initial" }}>{children}</div>
+      </div>
+    );
+  },
+  tableHead: ({ children }) => {
+    return (
+      <EuiTableHeader>
+        <span style={{ fontWeight: "bold" }}>{children}</span>
+      </EuiTableHeader>
+    );
+  },
+  tableBody: ({ children }) => {
+    return <EuiTableBody>{children}</EuiTableBody>;
+  },
+  tableRow: ({ children }) => {
+    return <EuiTableRow>{children}</EuiTableRow>;
+  },
+  tableCell: ({ children }) => {
+    return <EuiTableRowCell>{children}</EuiTableRowCell>;
   },
 };
 
