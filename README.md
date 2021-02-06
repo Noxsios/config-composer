@@ -4,8 +4,6 @@
 
 ## [DEMO](https://noxsios.github.io/config-composer/)
 
-## Example Files located [here](./sample/)
-
 This project combines the best of multiple technologies:
 
 - [PWA](https://web.dev/progressive-web-apps/) for all the power of a web app, but also full offline capabilities
@@ -18,23 +16,23 @@ This project combines the best of multiple technologies:
 
 ### Running Locally:
 
-first clone this repo then:
+First clone this repo then:
 
 ```bash
-cd config-composer
-yarn
-yarn start
+$ cd config-composer
+$ yarn
+$ yarn start
 ```
 
 Follow the [CRA](https://create-react-app.dev/docs/getting-started/#scripts) docs to learn more.
 
 ### TODO
 
-- [ ] Persistency?
-- [ ] Create a more in depth sample
+- [x] Persistency?
+- [x] Create a more in depth sample
 - [ ] Implement more code splitting / better bundling
 - [ ] Flip back between raw MB and rendered?
 - [ ] Edit YAML / metadata in browser? + resave
-- [ ] Pick up where you left off choice modal
-  - [ ] store in indexeddb -future proofs against saving more files
+- [x] Pick up where you left off choice modal
+  - [x] store in indexeddb -future proofs against saving more files
 
