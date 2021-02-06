@@ -7,6 +7,7 @@ import Footer from "./Footer";
 const Tutorial = lazy(() => import("./Tutorial"));
 const RenderedMD = lazy(() => import("./viewer/RenderedMD"));
 const CoverForm = lazy(() => import("./dragndrop/CoverForm"));
+const HistoryModal = lazy(() => import("./history/HistoryModal"));
 
 const Loading = () => {
   return (
@@ -33,6 +34,9 @@ const App = () => {
         </EuiTitle>
         <Suspense fallback={<div />}>
           <Tutorial />
+        </Suspense>
+        <Suspense fallback={<div />}>
+          <HistoryModal />
         </Suspense>
         <EuiSpacer />
         <Suspense fallback={<Loading />}>

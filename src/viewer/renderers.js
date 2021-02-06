@@ -53,16 +53,12 @@ const renderers = {
   table: ({ children }) => {
     return (
       <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <div style={{ display: "initial" }}>{children}</div>
+        <table style={{ display: "initial" }}>{children}</table>
       </div>
     );
   },
   tableHead: ({ children }) => {
-    return (
-      <EuiTableHeader>
-        <span style={{ fontWeight: "bold" }}>{children}</span>
-      </EuiTableHeader>
-    );
+    return <EuiTableHeader style={{ fontWeight: "bold" }}>{children}</EuiTableHeader>;
   },
   tableBody: ({ children }) => {
     return <EuiTableBody>{children}</EuiTableBody>;

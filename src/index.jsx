@@ -5,6 +5,10 @@ import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import "@elastic/eui/dist/eui_theme_dark.css";
 import "react-toastify/dist/ReactToastify.css";
 import "./printStyle.css";
+import { initDB } from "react-indexed-db";
+import { _DBConfig } from "./history/_DBConfig";
+
+initDB(_DBConfig);
 
 ReactDOM.render(
   <React.StrictMode>
