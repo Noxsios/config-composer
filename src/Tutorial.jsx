@@ -23,7 +23,7 @@ const Tutorial = () => {
   return (
     <div className="no-print">
       <Grid container spacing={1} direction="row" justify="center" alignItems="center" alignContent="center" wrap="nowrap">
-        <EuiButton size="small" onClick={openModal}>
+        <EuiButton size="m" onClick={openModal}>
           <p>Quick Start</p>
         </EuiButton>
       </Grid>
