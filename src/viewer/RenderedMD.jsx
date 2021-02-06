@@ -15,6 +15,9 @@ const RenderedMD = () => {
     clear().then(() => {
       add({ ...meta }, 0);
     });
+    return () => {
+      clear();
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
