@@ -38,15 +38,21 @@ const FilePickerYaml = () => {
   const readFileYaml = async (blob) => {
     let textBlob = new Blob([blob], { type: "text" });
     let text = await textBlob.text();
-    let json = jsyaml.load(text, "utf8");
-    return json;
+
+    try {
+      let json = jsyaml.load(text);
+      return json;
+    } catch (error) {
+      toast(error.reason);
+      return "undefined";
+    }
   };
 
   return (
-    <>
+    <div style={{ minWidth: 300, margin: "1rem" }}>
       <EuiFilePicker
         id="yaml-picker"
-        initialPromptText="Drag n Drop your YAML cutsheet file here."
+        initialPromptText="YAML"
         onChange={(files) => {
           onChange(files);
         }}
@@ -55,7 +61,7 @@ const FilePickerYaml = () => {
       />
       {/* <EuiText>{meta.json !== "undefined" && JSON.stringify(meta.json, null, 2)}</EuiText> */}
       <ToastContainer closeOnClick autoClose={5000} toastStyle={toastStyles} closeButton={false} />
-    </>
+    </div>
   );
 };
 

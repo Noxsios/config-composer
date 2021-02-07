@@ -41,10 +41,10 @@ const FilePickerMD = () => {
   };
 
   return (
-    <>
+    <div style={{ minWidth: 300, margin: "1rem" }}>
       <EuiFilePicker
         id="md-picker"
-        initialPromptText="Drag n Drop your Markdown config file here."
+        initialPromptText="Markdown"
         onChange={(files) => {
           onChange(files);
         }}
@@ -53,7 +53,7 @@ const FilePickerMD = () => {
       />
       {/* <EuiText>{meta.markdown !== "undefined" && JSON.stringify(meta.markdown, null, 2)}</EuiText> */}
       <ToastContainer closeOnClick autoClose={5000} toastStyle={toastStyles} closeButton={false} />
-    </>
+    </div>
   );
 };
 
