@@ -23,7 +23,11 @@ const RenderedMD = () => {
 
   return (
     <EuiPanel paddingSize="m">
-      <ReactMarkdown children={Mustache.render(meta.markdown, meta.json)} plugins={[gfm]} renderers={renderers} />
+      <ReactMarkdown
+        children={Mustache.render(meta.markdown, meta.json)}
+        plugins={[gfm]}
+        renderers={renderers}
+      />
     </EuiPanel>
   );
 };

@@ -11,9 +11,27 @@ const HistoryModal = lazy(() => import("./history/HistoryModal"));
 
 const Loading = () => {
   return (
-    <Grid container direction="row" justify="center" alignItems="center" alignContent="center">
-      <Grid container direction="column" justify="center" alignItems="center" alignContent="center">
-        <LinearProgress style={{ width: "80%", backgroundColor: DarkTheme.euiColorDisabledText }} color="secondary" />
+    <Grid
+      container
+      direction="row"
+      justify="center"
+      alignItems="center"
+      alignContent="center"
+    >
+      <Grid
+        container
+        direction="column"
+        justify="center"
+        alignItems="center"
+        alignContent="center"
+      >
+        <LinearProgress
+          style={{
+            width: "80%",
+            backgroundColor: DarkTheme.euiColorDisabledText,
+          }}
+          color="secondary"
+        />
       </Grid>
     </Grid>
   );
@@ -30,7 +48,9 @@ const App = () => {
     <MetaContext.Provider value={value}>
       <Container maxWidth="md" style={{ paddingBottom: "3.5rem" }}>
         <EuiTitle size="l">
-          <h1 style={{ textAlign: "center", padding: "1rem" }}>Config Composer</h1>
+          <h1 style={{ textAlign: "center", padding: "1rem" }}>
+            Config Composer
+          </h1>
         </EuiTitle>
         <Suspense fallback={<div />}>
           <Tutorial />
@@ -42,7 +62,9 @@ const App = () => {
         <Suspense fallback={<Loading />}>
           <CoverForm />
           <EuiSpacer />
-          {meta.json !== "undefined" && meta.markdown !== "undefined" && <RenderedMD />}
+          {meta.json !== "undefined" && meta.markdown !== "undefined" && (
+            <RenderedMD />
+          )}
         </Suspense>
         <Footer />
       </Container>

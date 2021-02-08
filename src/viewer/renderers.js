@@ -40,7 +40,12 @@ const renderers = {
   code: ({ language, value }) => {
     return (
       <div style={{ marginLeft: "2rem", marginRight: "2rem" }}>
-        <EuiCodeBlock language={language} isCopyable paddingSize="m" children={value} />
+        <EuiCodeBlock
+          language={language}
+          isCopyable
+          paddingSize="m"
+          children={value}
+        />
       </div>
     );
   },
@@ -48,17 +53,31 @@ const renderers = {
     return <EuiHorizontalRule size="half" />;
   },
   inlineCode: ({ language = "js", value }) => {
-    return <EuiCode language={language} children={value} style={{ color: "#FFCE7A" }} />;
+    return (
+      <EuiCode
+        language={language}
+        children={value}
+        style={{ color: "#FFCE7A" }}
+      />
+    );
   },
   table: ({ children }) => {
     return (
-      <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <table style={{ display: "initial" }}>{children}</table>
       </div>
     );
   },
   tableHead: ({ children }) => {
-    return <EuiTableHeader style={{ fontWeight: "bold" }}>{children}</EuiTableHeader>;
+    return (
+      <EuiTableHeader style={{ fontWeight: "bold" }}>{children}</EuiTableHeader>
+    );
   },
   tableBody: ({ children }) => {
     return <EuiTableBody>{children}</EuiTableBody>;

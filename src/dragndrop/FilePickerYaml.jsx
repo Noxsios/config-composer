@@ -60,7 +60,12 @@ const FilePickerYaml = () => {
         isInvalid={!valid}
       />
       {/* <EuiText>{meta.json !== "undefined" && JSON.stringify(meta.json, null, 2)}</EuiText> */}
-      <ToastContainer closeOnClick autoClose={5000} toastStyle={toastStyles} closeButton={false} />
+      <ToastContainer
+        closeOnClick
+        autoClose={5000}
+        toastStyle={toastStyles}
+        closeButton={false}
+      />
     </div>
   );
 };

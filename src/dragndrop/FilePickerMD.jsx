@@ -52,7 +52,12 @@ const FilePickerMD = () => {
         isInvalid={!valid}
       />
       {/* <EuiText>{meta.markdown !== "undefined" && JSON.stringify(meta.markdown, null, 2)}</EuiText> */}
-      <ToastContainer closeOnClick autoClose={5000} toastStyle={toastStyles} closeButton={false} />
+      <ToastContainer
+        closeOnClick
+        autoClose={5000}
+        toastStyle={toastStyles}
+        closeButton={false}
+      />
     </div>
   );
 };

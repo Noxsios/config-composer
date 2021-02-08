@@ -22,7 +22,14 @@ const Tutorial = () => {
 
   return (
     <div className="no-print">
-      <Grid container spacing={1} direction="row" justify="center" alignItems="center" alignContent="center">
+      <Grid
+        container
+        spacing={1}
+        direction="row"
+        justify="center"
+        alignItems="center"
+        alignContent="center"
+      >
         <EuiButton size="m" onClick={openModal}>
           <p>Quick Start</p>
         </EuiButton>
@@ -55,8 +62,17 @@ const TutorialBody = () => {
         <ol>
           <li>
             Download the sample{" "}
-            <FooterLink name="YAML" href="https://raw.githubusercontent.com/Noxsios/config-composer/main/sample/sample.yml" color="secondary" /> and{" "}
-            <FooterLink name="Markdown" href="https://raw.githubusercontent.com/Noxsios/config-composer/main/sample/sample.md" color="secondary" />
+            <FooterLink
+              name="YAML"
+              href="https://raw.githubusercontent.com/Noxsios/config-composer/main/sample/sample.yml"
+              color="secondary"
+            />{" "}
+            and{" "}
+            <FooterLink
+              name="Markdown"
+              href="https://raw.githubusercontent.com/Noxsios/config-composer/main/sample/sample.md"
+              color="secondary"
+            />
             .
             <br />
             <small>
@@ -65,10 +81,14 @@ const TutorialBody = () => {
           </li>
           <EuiHorizontalRule size="half" margin="xs" />
           <li>
-            Either click or drag and drop your <code>.yml</code>/<code>.md</code> files onto their respective input fields.
+            Either click or drag and drop your <code>.yml</code>/
+            <code>.md</code> files onto their respective input fields.
           </li>
           <EuiHorizontalRule size="half" margin="xs" />
-          <li>The content from the YAML file will replace the Mustache variables in the Markdown and render as clean HTML.</li>
+          <li>
+            The content from the YAML file will replace the Mustache variables
+            in the Markdown and render as clean HTML.
+          </li>
         </ol>
       </EuiText>
     </>
@@ -78,9 +98,18 @@ const TutorialBody = () => {
 const TutorialFooter = () => {
   return (
     <>
-      <FooterLink name="Markdown Syntax" href="https://github.github.com/gfm/" />
-      <FooterLink name="Mustache Variables" href="https://github.com/janl/mustache.js/blob/master/README.md#variables" />
-      <FooterLink name="YAML Syntax" href="https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html" />
+      <FooterLink
+        name="Markdown Syntax"
+        href="https://github.github.com/gfm/"
+      />
+      <FooterLink
+        name="Mustache Variables"
+        href="https://github.com/janl/mustache.js/blob/master/README.md#variables"
+      />
+      <FooterLink
+        name="YAML Syntax"
+        href="https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html"
+      />
     </>
   );
 };

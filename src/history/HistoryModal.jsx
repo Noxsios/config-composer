@@ -10,7 +10,11 @@ const HistoryModal = () => {
 
   useEffect(() => {
     getAll().then((entries) => {
-      if (entries.length !== 0 && meta.json === "undefined" && meta.markdown === "undefined") {
+      if (
+        entries.length !== 0 &&
+        meta.json === "undefined" &&
+        meta.markdown === "undefined"
+      ) {
         setIsModalVisible(true);
       } else {
         setIsModalVisible(false);
