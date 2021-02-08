@@ -1,5 +1,7 @@
 # Config Composer
 
+![GitHub last commit](https://img.shields.io/github/last-commit/noxsios/config-composer) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/noxsios/config-composer) ![GitHub](https://img.shields.io/github/license/noxsios/config-composer) ![GitHub deployments](https://img.shields.io/github/deployments/noxsios/config-composer/github-pages) 
+
 > BLUF: This PWA ingests a Markdown template file formatted with Mustache, and a YAML cutsheet file which are combined into a clean HTML representation of the Markdown template with the YAML values.
 
 ## [DEMO](https://noxsios.github.io/config-composer/)
@@ -25,14 +27,4 @@ $ yarn start
 ```
 
 Follow the [CRA](https://create-react-app.dev/docs/getting-started/#scripts) docs to learn more.
-
-### TODO
-
-- [x] Persistency?
-- [x] Create a more in depth sample
-- [ ] Implement more code splitting / better bundling
-- [ ] Flip back between raw MB and rendered?
-- [ ] Edit YAML / metadata in browser? + resave
-- [x] Pick up where you left off choice modal
-  - [x] store in indexeddb -future proofs against saving more files
 
