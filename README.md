@@ -26,5 +26,7 @@ $ yarn
 $ yarn start
 ```
 
+This repo uses [commitizen](https://github.com/commitizen/cz-cli) to format commits, and must be install globally with `yarn global add commitizen`
+
 Follow the [CRA](https://create-react-app.dev/docs/getting-started/#scripts) docs to learn more.
 
