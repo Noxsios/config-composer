@@ -58,6 +58,7 @@ const FilePickerYaml = () => {
         }}
         display="large"
         isInvalid={!valid}
+        aria-label="YAML File Picker"
       />
       {/* <EuiText>{meta.json !== "undefined" && JSON.stringify(meta.json, null, 2)}</EuiText> */}
       <ToastContainer

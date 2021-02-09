@@ -1,5 +1,5 @@
 {
-  "short_name": "config-composer",
+  "short_name": "Config Composer",
   "name": "Config Composer",
   "icons": [
     {
@@ -16,10 +16,13 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
   "display": "minimal-ui",
-  "theme_color": "#000000",
+  "theme_color": "#212121",
   "background_color": "#1A1B20"
 }

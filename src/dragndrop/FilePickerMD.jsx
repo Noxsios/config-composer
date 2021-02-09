@@ -50,6 +50,7 @@ const FilePickerMD = () => {
         }}
         display="large"
         isInvalid={!valid}
+        aria-label="Markdown File Picker"
       />
       {/* <EuiText>{meta.markdown !== "undefined" && JSON.stringify(meta.markdown, null, 2)}</EuiText> */}
       <ToastContainer
