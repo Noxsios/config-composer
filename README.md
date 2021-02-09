@@ -1,8 +1,8 @@
 # Config Composer
 
-![GitHub last commit](https://img.shields.io/github/last-commit/noxsios/config-composer) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/noxsios/config-composer) ![GitHub](https://img.shields.io/github/license/noxsios/config-composer) ![GitHub deployments](https://img.shields.io/github/deployments/noxsios/config-composer/github-pages) 
+![GitHub last commit](https://img.shields.io/github/last-commit/noxsios/config-composer) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/noxsios/config-composer) ![GitHub](https://img.shields.io/github/license/noxsios/config-composer) ![GitHub deployments](https://img.shields.io/github/deployments/noxsios/config-composer/github-pages) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Noxsios_config-composer&metric=ncloc)](https://sonarcloud.io/dashboard?id=Noxsios_config-composer) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Noxsios_config-composer&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Noxsios_config-composer)
 
-> BLUF: This PWA ingests a Markdown template file formatted with Mustache, and a YAML cutsheet file which are combined into a clean HTML representation of the Markdown template with the YAML values.
+> __BLUF__: This PWA ingests a Markdown template file formatted with Mustache, and a YAML cutsheet file which are rendered into a clean HTML representation of the Markdown template with the YAML values.
 
 ## [DEMO](https://noxsios.github.io/config-composer/)
 
