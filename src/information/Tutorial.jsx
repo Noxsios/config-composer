@@ -121,3 +121,5 @@ const FooterLink = ({ name, href, color = "primary" }) => {
     </EuiLink>
   );
 };
+
+export { FooterLink };
