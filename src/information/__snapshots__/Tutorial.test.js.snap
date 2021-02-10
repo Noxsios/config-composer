@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tutorial renders body 1`] = `
+<div
+  className="euiText euiText--medium"
+>
+  <ol>
+    <li>
+      Download the sample
+       
+      <a
+        className="euiLink euiLink--secondary"
+        href="https://raw.githubusercontent.com/Noxsios/config-composer/main/sample/sample.yml"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        YAML
+        <svg
+          aria-hidden={true}
+          aria-label="External link"
+          className="euiIcon euiIcon--small euiIcon-isLoading euiLink__externalIcon"
+          focusable="false"
+          height={16}
+          role="img"
+          style={null}
+          viewBox="0 0 16 16"
+          width={16}
+          xmlns="http://www.w3.org/2000/svg"
+        />
+        <span
+          className="euiScreenReaderOnly"
+        >
+          (opens in a new tab or window)
+        </span>
+      </a>
+       
+      and
+       
+      <a
+        className="euiLink euiLink--secondary"
+        href="https://raw.githubusercontent.com/Noxsios/config-composer/main/sample/sample.md"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Markdown
+        <svg
+          aria-hidden={true}
+          aria-label="External link"
+          className="euiIcon euiIcon--small euiIcon-isLoading euiLink__externalIcon"
+          focusable="false"
+          height={16}
+          role="img"
+          style={null}
+          viewBox="0 0 16 16"
+          width={16}
+          xmlns="http://www.w3.org/2000/svg"
+        />
+        <span
+          className="euiScreenReaderOnly"
+        >
+          (opens in a new tab or window)
+        </span>
+      </a>
+      .
+      <br />
+      <small>
+        (right click -
+        &gt;
+         Save Link As -
+        &gt;
+         Save)
+      </small>
+    </li>
+    <hr
+      className="euiHorizontalRule euiHorizontalRule--half euiHorizontalRule--marginXSmall"
+    />
+    <li>
+      Either click or drag and drop your 
+      <code>
+        .yml
+      </code>
+      /
+      <code>
+        .md
+      </code>
+       files onto their respective input fields.
+    </li>
+    <hr
+      className="euiHorizontalRule euiHorizontalRule--half euiHorizontalRule--marginXSmall"
+    />
+    <li>
+      The content from the YAML file will replace the Mustache variables in the Markdown and render as clean HTML.
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`Tutorial renders correctly 1`] = `
+<div
+  className="no-print"
+>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-align-items-xs-center MuiGrid-align-content-xs-center MuiGrid-justify-xs-center"
+  >
+    <button
+      className="euiButton euiButton--primary"
+      disabled={false}
+      onClick={[Function]}
+      style={
+        Object {
+          "minWidth": undefined,
+        }
+      }
+      type="button"
+    >
+      <span
+        className="euiButtonContent euiButton__content"
+      >
+        <span
+          className="euiButton__text"
+        >
+          <p>
+            Quick Start
+          </p>
+        </span>
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Tutorial renders footer 1`] = `
+Array [
+  <a
+    className="euiLink euiLink--primary"
+    href="https://github.github.com/gfm/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Markdown Syntax
+    <svg
+      aria-label="External link"
+      className="euiIcon euiIcon--small euiLink__externalIcon"
+      focusable="false"
+      height={16}
+      role="img"
+      style={null}
+      viewBox="0 0 16 16"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13 8.5a.5.5 0 111 0V12a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2h3.5a.5.5 0 010 1H4a1 1 0 00-1 1v8a1 1 0 001 1h8a1 1 0 001-1V8.5zm-5.12.339a.5.5 0 11-.706-.707L13.305 2H10.5a.5.5 0 110-1H14a1 1 0 011 1v3.5a.5.5 0 11-1 0V2.72L7.88 8.838z"
+      />
+    </svg>
+    <span
+      className="euiScreenReaderOnly"
+    >
+      (opens in a new tab or window)
+    </span>
+  </a>,
+  <a
+    className="euiLink euiLink--primary"
+    href="https://github.com/janl/mustache.js/blob/master/README.md#variables"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Mustache Variables
+    <svg
+      aria-label="External link"
+      className="euiIcon euiIcon--small euiLink__externalIcon"
+      focusable="false"
+      height={16}
+      role="img"
+      style={null}
+      viewBox="0 0 16 16"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13 8.5a.5.5 0 111 0V12a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2h3.5a.5.5 0 010 1H4a1 1 0 00-1 1v8a1 1 0 001 1h8a1 1 0 001-1V8.5zm-5.12.339a.5.5 0 11-.706-.707L13.305 2H10.5a.5.5 0 110-1H14a1 1 0 011 1v3.5a.5.5 0 11-1 0V2.72L7.88 8.838z"
+      />
+    </svg>
+    <span
+      className="euiScreenReaderOnly"
+    >
+      (opens in a new tab or window)
+    </span>
+  </a>,
+  <a
+    className="euiLink euiLink--primary"
+    href="https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    YAML Syntax
+    <svg
+      aria-label="External link"
+      className="euiIcon euiIcon--small euiLink__externalIcon"
+      focusable="false"
+      height={16}
+      role="img"
+      style={null}
+      viewBox="0 0 16 16"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13 8.5a.5.5 0 111 0V12a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2h3.5a.5.5 0 010 1H4a1 1 0 00-1 1v8a1 1 0 001 1h8a1 1 0 001-1V8.5zm-5.12.339a.5.5 0 11-.706-.707L13.305 2H10.5a.5.5 0 110-1H14a1 1 0 011 1v3.5a.5.5 0 11-1 0V2.72L7.88 8.838z"
+      />
+    </svg>
+    <span
+      className="euiScreenReaderOnly"
+    >
+      (opens in a new tab or window)
+    </span>
+  </a>,
+]
+`;
+
+exports[`Tutorial renders footer links 1`] = `
+<a
+  className="euiLink euiLink--primary"
+  href="There"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  Hello
+  <svg
+    aria-label="External link"
+    className="euiIcon euiIcon--small euiLink__externalIcon"
+    focusable="false"
+    height={16}
+    role="img"
+    style={null}
+    viewBox="0 0 16 16"
+    width={16}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M13 8.5a.5.5 0 111 0V12a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2h3.5a.5.5 0 010 1H4a1 1 0 00-1 1v8a1 1 0 001 1h8a1 1 0 001-1V8.5zm-5.12.339a.5.5 0 11-.706-.707L13.305 2H10.5a.5.5 0 110-1H14a1 1 0 011 1v3.5a.5.5 0 11-1 0V2.72L7.88 8.838z"
+    />
+  </svg>
+  <span
+    className="euiScreenReaderOnly"
+  >
+    (opens in a new tab or window)
+  </span>
+</a>
+`;
