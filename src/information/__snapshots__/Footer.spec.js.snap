@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders footer correctly 1`] = `
+<div
+  style={
+    Object {
+      "bottom": 0,
+      "left": 0,
+      "marginTop": "1rem",
+      "padding": "1rem",
+      "position": "relative",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-wrap-xs-nowrap MuiGrid-align-items-xs-center MuiGrid-align-content-xs-center MuiGrid-justify-xs-center"
+  >
+    <small
+      style={
+        Object {
+          "textAlign": "center",
+          "userSelect": "none",
+        }
+      }
+    >
+      SrA Harry Randazzo - aka Razzle-Dazzle ✨
+      <hr
+        className="euiHorizontalRule euiHorizontalRule--half euiHorizontalRule--marginXSmall"
+      />
+      <a
+        className="euiLink euiLink--primary"
+        href="https://github.com/Noxsios/config-composer"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Github
+        <svg
+          aria-hidden={true}
+          aria-label="External link"
+          className="euiIcon euiIcon--small euiIcon-isLoading euiLink__externalIcon"
+          focusable="false"
+          height={16}
+          role="img"
+          style={null}
+          viewBox="0 0 16 16"
+          width={16}
+          xmlns="http://www.w3.org/2000/svg"
+        />
+        <span
+          className="euiScreenReaderOnly"
+        >
+          (opens in a new tab or window)
+        </span>
+      </a>
+    </small>
+  </div>
+</div>
+`;

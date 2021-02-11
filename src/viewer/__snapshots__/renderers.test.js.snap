@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markdown renders blockquote 1`] = `
+<div
+  className="euiText euiText--medium"
+  style={
+    Object {
+      "margin": "0.5rem",
+    }
+  }
+>
+  <blockquote>
+    Single shot and grounds, java aged rich spoon arabica flavour. Percolator eu, strong lungo ristretto saucer instant beans. Robust seasonal brewed mocha, extraction barista milk as mocha decaffeinated latte.
+  </blockquote>
+</div>
+`;
+
+exports[`Markdown renders codeblock 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "2rem",
+      "marginRight": "2rem",
+    }
+  }
+/>
+`;
+
+exports[`Markdown renders em 1`] = `
+<span
+  className="euiTextColor euiTextColor--accent"
+>
+  <em>
+    Single shot and grounds, java aged rich spoon arabica flavour. Percolator eu, strong lungo ristretto saucer instant beans. Robust seasonal brewed mocha, extraction barista milk as mocha decaffeinated latte.
+  </em>
+</span>
+`;
+
+exports[`Markdown renders hr 1`] = `
+<hr
+  className="euiHorizontalRule euiHorizontalRule--half euiHorizontalRule--marginLarge"
+/>
+`;
+
+exports[`Markdown renders inlineCode 1`] = `null`;
+
+exports[`Markdown renders p 1`] = `
+<div
+  className="euiText euiText--medium"
+  style={
+    Object {
+      "marginBottom": "0.5rem",
+    }
+  }
+>
+  Single shot and grounds, java aged rich spoon arabica flavour. Percolator eu, strong lungo ristretto saucer instant beans. Robust seasonal brewed mocha, extraction barista milk as mocha decaffeinated latte.
+</div>
+`;
+
+exports[`Markdown renders root 1`] = `
+<div
+  className="euiText euiText--medium"
+>
+  Single shot and grounds, java aged rich spoon arabica flavour. Percolator eu, strong lungo ristretto saucer instant beans. Robust seasonal brewed mocha, extraction barista milk as mocha decaffeinated latte.
+</div>
+`;
+
+exports[`Markdown renders strong 1`] = `
+<span
+  className="euiTextColor euiTextColor--secondary"
+>
+  <strong>
+    Single shot and grounds, java aged rich spoon arabica flavour. Percolator eu, strong lungo ristretto saucer instant beans. Robust seasonal brewed mocha, extraction barista milk as mocha decaffeinated latte.
+  </strong>
+</span>
+`;
+
+exports[`Markdown renders table 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  <table
+    style={
+      Object {
+        "display": "initial",
+      }
+    }
+  >
+    <thead
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+    >
+      <tr>
+        <tr
+          className="euiTableRow"
+        >
+          <td
+            className="euiTableRowCell"
+            style={
+              Object {
+                "width": undefined,
+              }
+            }
+          >
+            <div
+              className="euiTableCellContent"
+            >
+              <span
+                className="euiTableCellContent__text"
+              >
+                Title
+              </span>
+            </div>
+          </td>
+        </tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="euiTableRow"
+      >
+        <td
+          className="euiTableRowCell"
+          style={
+            Object {
+              "width": undefined,
+            }
+          }
+        >
+          <div
+            className="euiTableCellContent"
+          >
+            <span
+              className="euiTableCellContent__text"
+            >
+              Body
+            </span>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

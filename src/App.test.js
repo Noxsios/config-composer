@@ -1,8 +1,7 @@
-import ReactDOM from "react-dom";
+import renderer from "react-test-renderer";
 import App from "./App";
 
-test("App renders without crashing", () => {
-  const div = document.createElement("div");
-  ReactDOM.render(<App />, div);
-  div.remove();
+it("renders with the title", () => {
+  const t = renderer.create(<App />).toJSON();
+  expect(t.children[0].children[0]).toBe("Config Composer");
 });

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders history modal skeleton 1`] = `
+<div
+  className="no-print"
+/>
+`;
