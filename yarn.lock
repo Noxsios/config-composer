@@ -1187,10 +1187,10 @@
   dependencies:
     tslib "^1.9.3"
 
-"@elastic/eui@^31.5.0":
-  version "31.5.0"
-  resolved "https://registry.yarnpkg.com/@elastic/eui/-/eui-31.5.0.tgz#c8a1c30d6fb049d4474afa92869f18cd72e6a19b"
-  integrity sha512-Wyp6NavbFPGHRRl3ZCe1ZSIFr3U43K7ab1zbqKnhREJdet9aia+XCKS2BlKOEnPoIYVJCyJqdqdMq0/M/KAteg==
+"@elastic/eui@^31.7.0":
+  version "31.7.0"
+  resolved "https://registry.yarnpkg.com/@elastic/eui/-/eui-31.7.0.tgz#091cad212da3d7bad8e1717398d9bf404257f835"
+  integrity sha512-Be4K/dizAsmOrRMAKZy6oW4VaEvQNB1LvbKxNWIa4yFeX7Wn6gw5ihttgbQ4vqWWIkhLPoadbXMebKF9+7VuhA==
   dependencies:
     "@types/chroma-js" "^2.0.0"
     "@types/lodash" "^4.14.160"
@@ -1769,10 +1769,10 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^7.28.1"
 
-"@testing-library/user-event@^12.7.0":
-  version "12.7.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-12.7.0.tgz#39084ab8c777f6113980b80b8a25f2b7e349f8aa"
-  integrity sha512-KzRM1KNDoW8pJ2HTenrUhTjV6wJMHvWAagDs8DDrYSWz6y4PN+K2jSvlm2bMHWNRk5LTJPo9jqIjNjJ3FlqXNw==
+"@testing-library/user-event@^12.7.1":
+  version "12.7.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-12.7.1.tgz#e1ce931c04a1c65faf28618442d56ba8da887f2c"
+  integrity sha512-COfCkYgcxc+P9+pEAIGlmBuIDjO91Chf9GOBHI8AhIiMyaoOrKVPQny1uf0HIAYNoHKL5slhkqOPP2ZyNaVQGw==
   dependencies:
     "@babel/runtime" "^7.12.5"
 
