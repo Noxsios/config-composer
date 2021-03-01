@@ -19,7 +19,7 @@
     "react-scripts": "4.0.2",
     "react-toastify": "^7.0.3",
     "remark-gfm": "^1.0.0",
-    "workbox-core": "^6.1.0",
+    "workbox-core": "^6.1.1",
     "workbox-expiration": "^6.1.0",
     "workbox-precaching": "^6.1.0",
     "workbox-routing": "^6.1.0",
